@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+/* Center the body, add shadow to text */
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 4px black;
+  font-weight: 300;
+}
+
+/* Centers the header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+  flex-direction: column;
+}
+
+/* Styling the search/input bar */
+
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgb(216, 201, 201);
+  border-bottom: 3px solid black;
+  border-radius: 16px 0px 16px 0px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.2s ease-out;
+}
+
+/* Change coolor when search bar is in focus */
+
+header input:focus {
+  background-color: white;
+}
+
+/* Styling main weather ICON */
+
+#icon {
+  height: 300px;
+  width: 300px;
+}
+
+/* Styling forecast tables ICONS */
+
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+  height: 200px;
+  width: 200px;
+}
+
+/* Styles the text in the more info about current day table */
+
+.more-weather-info {
+  line-height: 60px;
+  height: 20px;
+  border: 3px;
+  text-align: center;
+}
+
+/* Creates the more info table for the current day */
+
+.more-weather-info {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 330px;
+  height: 435px;
+  border: 1.5px solid white;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 4px 5px black;
+}
+
+/* Styles the contet of forcast tables, separates text */
+
+.forcastTable,
+.forcastTable1,
+.forcastTable2,
+.forcastTable3,
+.forcastTable4 {
+  line-height: 28px;
+  height: 20px;
+  border: 3px;
+  text-align: center;
+}
+
+/* Styles the location info on-top of the weather app */
+
+.location-desc {
+  flex: 1 1 100%;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 4px black;
+  text-decoration: underline;
+}
+
+#location {
+  flex: 1 1 100%;
+  color: white;
+  padding: 25px 25px 50px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 4px black;
+  font-weight: 300;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+/* Styles the city name on the main page */
+
+.place .city {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Styles the date on the main page */
+
+.place .date {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Styles the time/clock on the main page */
+
+.place .time {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+/* Creates the squares/tables around the forecast weather data */
+
+.forcastTable,
+.forcastTable1,
+.forcastTable2,
+.forcastTable3,
+.forcastTable4 {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 330px;
+  height: 445px;
+  border: 1.5px solid white;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 4px 5px black;
+}
+
+/* Styles the temp on the main page */
+
+.current .temp {
+  color: #ffffff;
+  font-size: 110px;
+  font-weight: 1000;
+  margin: 30px 0px;
+  text-shadow: 2px 8px black;
+}
+
+/* Styles the weather description on the main page, (rain, cloudy, sunny, etc) */
+
+.current .weather {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 750;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 6px black;
+}
+
+/* Styles the high and low temp on the main page */
+
+.current .high-low {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 0px 5px black;
+}
+
+/* Styles the more info button */
+
+.myButton2 {
+  box-shadow: 0.5px 2px 0px 0px black;
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #33bdef;
+  border-radius: 6px;
+  border: 1px solid #057fd0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+}
+.myButton2:hover {
+  background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+  background-color: #019ad2;
+}
+.myButton2:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Styles the delete button */
+
+.deleteBtn {
+  box-shadow: inset 0px 1px 0px 0px #cf866c;
+  background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+  background-color: #d0451b;
+  border-radius: 6px;
+  border: 1px solid #942911;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 13px;
+  padding: 1px 4px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #854629;
+}
+.deleteBtn:hover {
+  background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  background-color: #bc3315;
+}
+.deleteBtn:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Styles the search/saves to local storage button */
+
+.adFavorite {
+  box-shadow: 3px 4px 0px 0px black;
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #33bdef;
+  border-radius: 5px;
+  border: 1px solid #057fd0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 3px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5b6178;
+}
+.adFavorite:hover {
+  background: linear-gradient(to bottom, #3491ed 5%, #79bbff 100%);
+  background-color: #019ad2;
+}
+.adFavorite:active {
+  position: relative;
+  top: 1px;
+}
+
+.search {
+  box-shadow: 3px 4px 0px 0px black;
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  background-color: #33bdef;
+  border-radius: 5px;
+  border: 1px solid #057fd0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 3px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5b6178;
+}
+.search:hover {
+  background: linear-gradient(to bottom, #3491ed 5%, #79bbff 100%);
+  background-color: #019ad2;
+}
+.search:active {
+  position: relative;
+  top: 1px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/da6381665b.js" crossorigin="anonymous"></script>    
+    </head>
+    <body>
+        <div class="weatherapp">
+            <header>
+                <h2 class="location-desc">YOUR CURRENT LOCATION</h2>
+                <br>
+                <span style='font-size:50px;'>&#128205;</span>
+                <p id="location"></p>
+                <canvas class="myCanvas" width="550" height="150" style=" box-shadow: 4px 4px black; border:1px solid white;"></canvas>
+                <br>
+                <br>
+                <input class="searchbox" type="text" list="searchdata">
+                <button class="deleteBtn">>DELETE</button>
+                <br>
+                <button class="adFavorite">Search</button>
+                <br>
+                <datalist id="searchdata"></datalist>
+
+                <button class="search">Ad Fav</button>
+            </header>             
+            <main>
+                <section class="place">                
+                    <div class="city"></div>
+                    <div class="date"></div> 
+                    <br><br>
+                    <div class="time"></div>
+                </section>
+
+                <div class="current">
+                    <div class="temp"></div>
+                    <img src="" id="icon">
+                    <div class="weather"></div>                    
+                    <div class="high-low"></div>
+                </div>                               
+                <br>
+                <button class="myButton2" onclick="hideAndShowForecastTable()">More Info</button>
+                <br>
+                <br>                
+                <center class="allForcast">
+                    <div class="more-weather-info">
+                        <h2>Today</h2>  
+                        <div class="wind-deg"></div>
+                        <div class="wind-gust"></div>
+                        <div class="wind-speed"></div>
+                        <div class="weather-pressure"></div>
+                        <div class="weather-humidity"></div>
+                        <div class="weather-feels-like"></div>
+                    </div>
+                    <br>
+                    <div class="forcastTable">
+                        <br>
+                        <div class="day1"></div>
+                        <img src="" id="icon1">
+                        <div class="high-temp"></div>
+                        <div class="low-temp"></div>
+                        <div class="wind-speed"></div>
+                        <div class="weather-pressure"></div>
+                        <div class="humidity"></div>
+                        <div class="feels-like"></div>                        
+                    </div>
+                    <br>
+                    <div class="forcastTable1">
+                        <br>
+                        <div class="day2"></div>
+                        <img src="" id="icon2">
+                        <div class="high-temp"></div>
+                        <div class="low-temp"></div>
+                        <div class="wind-speed"></div>
+                        <div class="weather-pressure"></div>
+                        <div class="humidity"></div>
+                        <div class="feels-like"></div>
+                    </div>
+                    <br>
+                    <div class="forcastTable2">
+                        <br>
+                        <div class="day3"></div>
+                        <img src="" id="icon3">
+                        <div class="high-temp"></div>
+                        <div class="low-temp"></div>
+                        <div class="wind-speed"></div>
+                        <div class="weather-pressure"></div>
+                        <div class="humidity"></div>
+                        <div class="feels-like"></div>
+                    </div>
+                    <br>
+                    <div class="forcastTable3">
+                        <br>
+                        <div class="day4"></div>
+                        <img src="" id="icon4">
+                        <div class="high-temp"></div>
+                        <div class="low-temp"></div>
+                        <div class="wind-speed"></div>
+                        <div class="weather-pressure"></div>
+                        <div class="humidity"></div>
+                        <div class="feels-like"></div>
+                    </div>
+                    <br>                    
+                    <div class="forcastTable4">
+                        <br>
+                        <div class="day5"></div>  
+                        <img src="" id="icon5">
+                        <div class="high-temp"></div>
+                        <div class="low-temp"></div>
+                        <div class="wind-speed"></div>
+                        <div class="weather-pressure"></div>
+                        <div class="humidity"></div>
+                        <div class="feels-like"></div>
+                    </div>
+                </center>         
+            </main>
+        </div>
+        <script src="main.js"></script>    
+    </body>
+</html>
