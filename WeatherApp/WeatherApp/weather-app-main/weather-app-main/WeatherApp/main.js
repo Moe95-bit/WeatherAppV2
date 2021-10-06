@@ -16,20 +16,32 @@
  });
 
     document.querySelector(".search").addEventListener("click", () => {
-    let data = document.querySelector("datalist#searchdata");
-    data.innerHTML = "";
+    let data = document.querySelector("ul.dropdown-content");
+    data.innerHTML = "";    
 
     searchHistory.forEach((search) => {
-        data.innerHTML = "<option>" + data.innerHTML;
-        data.querySelector("option").innerText = search;
-  });
+        console.log(search);
+        // data.innerHTML = "<option>" + data.innerHTML;
+        // data.querySelector("option").innerText = search;        
+        let listItem = document.createElement("LI");
+        listItem.className = "ListItem";
+        let textNode = document.createTextNode(search);
+        listItem.addEventListener("click", function (){
+            getResults(search);
+            getFiveDayForecast(search);
+            
+    });
+
+        listItem.appendChild(textNode);
+        data.appendChild(listItem);
+        });
   
-});
+    });
 
     //Button to delete saved items from local storage
 
  document.querySelector(".deleteBtn").addEventListener("click", () =>{
-    let data = document.querySelector("datalist#searchdata");
+    let data = document.querySelector("ul.dropdown-content");
     data.innerHTML = "";
     localStorage.clear();
  })
@@ -57,6 +69,8 @@ adFavorite.addEventListener('click', () => {
         getFiveDayForecast(searchbox.value);
     }
 });
+
+        
 
     //Fetch weather valeus from api
 
